@@ -1,0 +1,322 @@
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 99%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+section {
+    width: 95.8334%;
+    float: none;
+    padding-right: 2.0833%;
+    padding-left: 2.0833%;
+}
+
+.me {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+/* hide the mobile menu*/
+#mobile_menu {
+    display: none;
+}
+
+/* display the mobile menu
+#mobile_menu { display: block; }*/
+/* Phone portrait */
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+/* Tablet portrait */
+@media only screen and (max-width: 959px) {
+    section h1 {
+        font-size: 135%;
+    }
+
+    section h2, aside h2 {
+        font-size: 120%;
+    }
+}
+
+/* Phone landscape */
+@media only screen and (max-width: 767px) {
+    header img {
+        float: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    /* hide the nav menu, display ham menu*/
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: #800000 !important;
+    }
+}
+
+aside {
+    width: 95.8334%;
+    float: none;
+    padding-left: 2.0833%;
+    padding-right: 2.0833%;
+    padding-bottom: 20px;
+}
+
+#nav_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#nav_menu::after {
+    clear: left;
+    display: block;
+}
+
+#nav_menu li {
+    float: left;
+    display: inline-block;
+    width: 20%;
+}
+
+ul li a {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+ul li ul {
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    position: fixed;
+
+}
+
+ul li ul li {
+    float: none;
+}
+
+ul li:hover ul {
+    display: block;
+    visibility: visible;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.current {
+    color: yellow;
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 3px solid #931420;
+    padding: 1.5em 30px 2em;
+    background-image: linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+}
+
+header img {
+    float: left;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    text-indent: 20px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 20px;
+}
+
+header h1 {
+    font-size: 150%;
+}
+
+.shadow {
+    text-shadow: 2px 2px #800000;
+}
+
+/* the styles for the section */
+main {
+    clear: left;
+    /*padding-left: 30px;
+    padding-right: 30px; */
+}
+
+.indent {
+    padding-left: 5px;
+}
+
+/* Gets the elements within the main element with a space
+   This is different from a comma as they are not separate.*/
+/* h1 {
+	/*border-bottom: 3px solid #931420; //normal lines
+	border-top: 3px solid #931420;*/
+
+/* Rounded border with box shadow
+
+background-color: white;
+padding-top: 10px;
+padding-left: 30px;
+padding-bottom: 10px;
+border: 5px double #931420;
+border-radius: 15px;
+box-shadow: 3px 3px 4px 4px black;
+
+} */
+section {
+    padding-bottom: 1.5em;
+}
+
+article {
+    /*padding-top: .5em;*/
+    padding-bottom: .5em;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+
+article img {
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border: 1px solid black;
+    max-width: 15%;
+}
+
+article h2 {
+    padding-top: 0;
+}
+
+article h3 {
+    font-size: 105%;
+    padding-bottom: .1em;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
+}
+
+section h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+
+section ul {
+    list-style-type: circle;
+}
+
+aside h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    line-height: 80%;
+    /* padding-bottom: .25em; */
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+aside img {
+    /*padding-bottom: 1em;*/
+    padding-top: .25em;
+}
+
+section p {
+    padding-bottom: .5em;
+}
+
+section blockquote {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+.normal {
+    color: black;
+    font-size: 75%;
+}
+
+.normala {
+    font-size: 75%;
+}
+
+.pada {
+    margin-top: 1.5em;
+}
+
+/* Changes the text to italic when the link is focused,
+   or the mouse hovers over the link */
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* the styles for the footer */
+footer p {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+footer {
+    background-color: #931420;
+    color: white;
+    clear: right;
+}

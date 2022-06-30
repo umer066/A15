@@ -1,0 +1,253 @@
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+section {
+    width: 525px;
+    float: right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+aside {
+    width: 215px;
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#nav_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#nav_menu::after {
+    clear: left;
+    display: block;
+}
+
+#nav_menu li {
+    float: left;
+}
+
+ul li a {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+ul li ul {
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    position: fixed;
+
+}
+
+ul li ul li {
+    float: none;
+}
+
+ul li:hover ul {
+    display: block;
+    visibility: visible;
+}
+
+.current {
+    color: yellow;
+}
+
+/* the styles for the header */
+header {
+    border-bottom: 3px solid #931420;
+    padding: 1.5em 30px 2em;
+    background-image: linear-gradient(30deg, #f6bb73 0%, white 30%, white 50%, white 80%, #f6bb73 100%);
+}
+
+header img {
+    float: left;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    text-indent: 20px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 20px;
+}
+
+header h1 {
+    font-size: 150%;
+}
+
+.shadow {
+    text-shadow: 2px 2px #800000;
+}
+
+/* the styles for the section */
+main {
+    clear: left;
+    /*padding-left: 30px;
+    padding-right: 30px; */
+}
+
+.indent {
+    padding-left: 5px;
+}
+
+/* Gets the elements within the main element with a space
+   This is different from a comma as they are not separate.*/
+/* h1 {
+	/*border-bottom: 3px solid #931420; //normal lines
+	border-top: 3px solid #931420;*/
+
+/* Rounded border with box shadow
+
+background-color: white;
+padding-top: 10px;
+padding-left: 30px;
+padding-bottom: 10px;
+border: 5px double #931420;
+border-radius: 15px;
+box-shadow: 3px 3px 4px 4px black;
+
+} */
+section {
+    padding-bottom: 1em;
+}
+
+article {
+    /*padding-top: .5em;*/
+    padding-bottom: .5em;
+}
+
+article img {
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border: 1px solid black;
+}
+
+article h2 {
+    padding-top: 0;
+}
+
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0;
+    color: #800000;
+}
+
+section h2 {
+    font-size: 105%;
+    color: black;
+}
+
+section p {
+    padding-top: .3em;
+    font-size: 100%;
+}
+
+aside h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    line-height: 80%;
+    /* padding-bottom: .25em; */
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+aside img {
+    /*padding-bottom: 1em;*/
+    padding-top: .25em;
+}
+
+section p {
+    padding-bottom: .5em;
+}
+
+section blockquote {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+.normal {
+    color: black;
+    font-size: 75%;
+}
+
+.normala {
+    font-size: 75%;
+}
+
+/* Changes the text to italic when the link is focused,
+   or the mouse hovers over the link */
+a:focus, a:hover {
+    font-style: italic;
+}
+
+/* the styles for the footer */
+footer p {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+footer {
+    background-color: #931420;
+    color: white;
+    clear: right;
+}
